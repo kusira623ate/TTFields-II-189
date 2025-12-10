@@ -740,7 +740,8 @@
             // - "sd-last_anaphase_bounce_E_1JFF_msd_variation" (with EF)
             // - For without EF, it would be E0 instead of E_1JFF
             
-            const efSuffix = hasElectricField ? "E_1JFF" : "E0";
+            // const efSuffix = hasElectricField ? "E_1JFF" : "E0";
+            const efSuffix = hasElectricField ? "E_1JFF" : "E0_1JFF";
             
             if (isTimeGraph) {
                 return `msd_${phase}_${condition}_${efSuffix}_msdVtime.png`;
