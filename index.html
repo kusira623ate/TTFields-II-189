@@ -738,7 +738,7 @@
             // Note: In your example, you mentioned:
             // - "msd_anaphase_bounce_E_1JFF_msdVtime" (with EF)
             // - "sd-last_anaphase_bounce_E_1JFF_msd_variation" (with EF)
-            // - For without EF, it would be E0 instead of E_1JFF
+            // - For without EF, it would be E0_1JFF instead of E_1JFF
             
             // const efSuffix = hasElectricField ? "E_1JFF" : "E0";
             const efSuffix = hasElectricField ? "E_1JFF" : "E0_1JFF";
@@ -943,7 +943,7 @@
         console.log("Using original file naming convention:");
         console.log("- MSD vs Time: msd_{phase}_{condition}_{EF}_msdVtime.png");
         console.log("- MSD vs Particle Count: sd-last_{phase}_{condition}_{EF}_msd_variation.png");
-        console.log("Where EF = E0 (without electric field) or E_1JFF (with electric field)");
+        console.log("Where EF = E0_1JFF (without electric field) or E_1JFF (with electric field)");
         
         // Add keyboard navigation
         document.addEventListener('keydown', (e) => {
